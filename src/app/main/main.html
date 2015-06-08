@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="card" ng-repeat="card in cards">
+        <div class="card__header">
+            <h1>{{ card.title }}</h1>
+            <span><i class="fa fa-play"></i></span>
+        </div>
+
+        <div class="card__sub-header">Images & multiple question</div>
+
+        <div class="card__core">
+            <div class="card__core__content">
+                <h1>{{ card.number }}</h1>
+                <h2>respondants since</h2>
+                <h3>Jan 01 2014, 06:30 PM</h3>
+            </div>
+        </div>
+
+        <div class="card__footer">
+            <span class="i fa fa-comments"></span>
+            <span class="i fa fa-envelope"></span>
+            <span class="i fa fa-eye"></span>
+            <span class="i fa fa-trash"></span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 40px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  margin: auto;
+  width: 960px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  font-family: 'Helvetica';
+  height: 350px;
+  width: 300px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__header {
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  background-color: #7B77C9;
+  color: white;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__header h1 {
+  padding-right: 40px;
+}
+
+.card__header > span {
+  display: block;
+  height: 25px;
+  width: 25px;
+  font-size: 10px;
+  padding-left: 3px;
+  line-height: 18px;
+  text-align: center;
+  border: 3px white solid;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+.card__footer {
+  margin-top: auto;
+  height: 65px;
+  background-color: #F5F8FC;
+  color: rgba(0, 0, 0, 0.2);
+  padding: 0 35px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+}
+
+.card__footer > span {
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+  cursor: pointer;
+}
+
+.card__footer > span.active {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.card__footer > span:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.card__sub-header {
+  height: 50px;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 0 10px;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 12px;
+  border-bottom: 1px rgba(0, 0, 0, 0.05) solid;
+}
+
+.card__core {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__core__content {
+  margin: auto;
+}
+
+.card__core__content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card__core__content h2 {
+  color: #7B77C9;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.card__core__content h3 {
+  font-weight: 300;
+}
+
+.card__core__content > * {
+  text-align: center;
+}
